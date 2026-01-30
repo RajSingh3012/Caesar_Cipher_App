@@ -9,4 +9,4 @@ shift = st.number_input("Type the shift number", min_value=1, step=1)
 run_cipher = st.button("Cipher It")
 if run_cipher:
     result = caesar(text.lower(), shift, direction.lower())
-    st.markdown(f"## Here is the {direction} Results: **{result}** ")
+    st.markdown(f"##Here is the {direction} Results: **{result.strip()}**")
